@@ -1,0 +1,42 @@
+.BtnPrimaryLargeDefaultTextOnly{
+    width: 115px;
+    height: 48px;
+    background-color: #C0FA73;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border-radius: 4px;
+    a{
+        text-decoration: none;
+        color: #212529;
+        font-weight:500; 
+    };
+    
+    &:hover{
+        a{
+            color:#477A11;
+        }
+    };
+};
+
+
+.BtnNeutralLargeDefaultTextOnly{
+    width: 115px;
+    height: 48px;
+    background-color: #212529;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border-radius: 4px;
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight:500; 
+    };
+    
+    &:hover{
+       background-color: #495057;
+    };
+};

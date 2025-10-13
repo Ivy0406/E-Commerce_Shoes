@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="SCSS/main.css"> 
+</head>
+<body>
+    <header class="Header">
+        <div class="Navbar">
+            <div class="Navbar_logo"><img src="Images/Logo.png">
+            </div>
+            <div class="Navbar_menu">
+                <a href="#" target="_blank">商品列表</a>
+                <a href="#" target="_blank">品牌故事</a>
+            </div>
+        </div>
+
+        <div class="Header_login">
+            <a href="login.html"><img src="./Images/icon-login.png" alt="註冊登入連結"></a>
+        </div>
+        
+    </header>
+
+    <div class="Navbar_mobile_menu">
+        <a href="product-list.html" target="_blank" class="Navbar_mobile_menu_productList">商品列表</a>
+        <a href="about.html" target="_blank" class="Navbar_mobile_menu_about">品牌故事</a>
+    </div>
+
+    <div class="HeroSection">
+        <picture>
+            <source media="(max-width:768px)" srcset="./Images\banner-sm.png">
+            <img src="./Images/banner.png" alt="主視覺圖">
+        </picture>
+        
+        <div class="HeroSection_content">
+            <div class="HeroSection_title">URBNSTEP</div>
+            <div class="HeroSection_slogan">Your Step,Your Statement</div>
+            <button class="BtnPrimaryLargeDefaultTextOnly"><a href="product-list.html">立即選購</a></button>
+        </div>
+        
+    </div>
+
+    <div class="NewArrival">
+        <div class="NewArrival_title">
+            <h1>New Arrival</h1>
+            <h2>新品上市</h2>
+        </div>
+        <div class="NewArrival_content">
+            <button class="NewArrival_card">
+                <img src="Images/new-1.png" alt="Monoverse">
+                <div class="NewArrival_name">Monoverse</div>
+                <div class="NewArrival_price">NT$3,600</div>
+            </button>
+            <button class="NewArrival_card">
+                <img src="Images/new-2.png" alt="PLATFORM 404">
+                <div class="NewArrival_name">PLATFORM 404</div>
+                <div class="NewArrival_price">NT$2,600</div>
+            </button>
+            <button class="NewArrival_card">
+                <img src="Images/new-3.png" alt="URBN Force">
+                <div class="NewArrival_name">URBN Force</div>
+                <div class="NewArrival_price">NT$3,200</div>
+            </button>
+            <button class="NewArrival_card">
+                <img src="Images/new-4.png" alt="Mode90">
+                <div class="NewArrival_name">Mode90</div>
+                <div class="NewArrival_price">NT$4,000</div>
+            </button>
+        </div>
+    </div>
+
+    <div class="BestSales">
+        <div class="BestSales_title">熱銷補貨</div>
+        <div class="BestSales_content">
+            <button class="BestSales_card">
+                <img src="Images/Best-1.png">
+                <div class="BestSales_card_lebal">人氣 No.1</div>
+            </button>
+            <button class="BestSales_card">
+                <img src="Images/Best-2.png">
+                <div class="BestSales_card_lebal">人氣 No.1</div>
+            </button>
+            <button class="BestSales_card">
+                <img src="Images/Best-3.png">
+                <div class="BestSales_card_lebal">人氣 No.1</div>
+            </button>
+            <button class="BestSales_card">
+                <img src="Images/Best-4.png">
+                <div class="BestSales_card_lebal">人氣 No.1</div>
+            </button>
+        </div>
+    </div>
+
+    <div class="Banner-Ad">
+        <picture>
+            <source media="(max-width:768px)" srcset="./Images\banner-co-branded-sm.png">
+            <img src="Images/banner-co-branded.png">
+        </picture>
+        
+        <div class="Banner-Ad_content">
+            <div class="Banner-Ad_title">
+                <h2>URBNSTEP</h2>
+                <p>X</p>
+                <h2>Kevin Chen</h2>
+            </div>
+            <div class="Banner-Ad_subtitle">跨界聯名，限量發售</div>
+            <div class="Banner-Ad_details">新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！</div>
+            <button class="BtnPrimaryLargeDefaultTextOnly"><a href="product-list.html">立即搶購</a>
+            </button>
+        </div>
+        <ul class="indicators">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> 
+        </ul>
+    </div>
+
+    <div class="Series">
+        <div class="Series_title">依系列選購</div>
+        <div class="Series_content">
+            <button class="Series_card">
+                <div class="overlay"></div>
+                <img src="./Images/Series-1.png" alt="URBN RUNNER慢跑系列">
+                <div class="Series_name">
+                    <h2>URBN RUNNER</h2>
+                    <h3>慢跑系列</h3>
+                </div>
+            </button>
+            <button class="Series_card">
+                <div class="overlay"></div>
+                <img src="./Images/Series-2.png" alt="STREETMODE滑板系列">
+                <div class="Series_name">
+                    <h2>STREETMODE</h2>
+                    <h3>滑板系列</h3>
+                </div>
+            </button>
+            <button class="Series_card">
+                <div class="overlay"></div>
+                <img src="./Images/Series-3.png" alt="CHUNK DISTRICT厚底系列">
+                <div class="Series_name">
+                    <h2>CHUNK DISTRICT</h2>
+                    <h3>厚底系列</h3>
+                </div>
+            </button>
+            <button class="Series_card">
+                <div class="overlay"></div>
+                <img src="./Images/Series-4.png" alt="COLLAB ZONE聯名企劃">
+                <div class="Series_name">
+                    <h2>COLLAB ZONE</h2>
+                    <h3>聯名企劃</h3>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div class="Style">
+        <div class="Style_title">穿搭靈感</div>
+        <div class="Style_gallery">
+            <img class="span-sm" src="./Images/inspiration-1.png" alt="">
+            <img class="span-sm"src="./Images/inspiration-2.png" alt="">
+            <img class="span-sm" src="./Images/inspiration-4.png" alt="">
+            <img class="span-sm" src="./Images/inspiration-5.png" alt="">
+            <img class="span-lg" src="./Images/inspiration-10.png" alt="">
+            <img class="span-lg" src="./Images/inspiration-3.png" alt="">
+            <img class="span-sm" src="./Images/inspiration-6.png" alt="">
+            <img class="span-sm" src="./Images/inspiration-7.png" alt="">
+            <img class="span-sm" src="./Images/inspiration-8.png" alt="">
+            <img class="span-sm" src="./Images/inspiration-9.png" alt="">
+            <img class="span-sm" src="./Images/inspiration-11.png" alt="">
+            <img class="span-sm" src="./Images/inspiration-12.png" alt="">
+        </div>
+    </div>
+    
+    <div class="Banner-CTA">
+        <div class="Banner-CTA_text">加入會員取得9折優惠</div>
+        <button class="BtnNeutralLargeDefaultTextOnly"><a href="#" target="_blank">馬上註冊</a></button>
+    </div>
+
+    <div class="Footer">
+        <div class="Footer_navbar">
+            <div class="Footer_logo"><img src="./Images/Logo.png"></div>
+            <div class="Footer_menu">
+                <a href="product-list.html">商品列表</a>
+                <a href="about.html">品牌故事</a></div>
+            
+        </div>
+        <div class="Copyright">
+            <p>Copyright ©2025 URBNSTYLE</p>
+            <p>All Rights Reserved.</p>
+        </div>
+        
+    </div>
+
+</body>
+</html>
