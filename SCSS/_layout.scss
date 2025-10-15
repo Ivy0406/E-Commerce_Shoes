@@ -555,6 +555,14 @@ main{
     margin: 0 auto;
 };
 
+@media (max-width:768px) {
+    main{
+        width: 100%;
+        padding: 0 auto;
+        padding: 0 3%;
+    };
+};
+
 h1{
     font-size: 28px;
     font-weight: 700;
@@ -566,6 +574,7 @@ h1{
 
 .ProductListContainer{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     .ProductList{
         width: 100%;
@@ -602,12 +611,14 @@ h1{
 
 @media(max-width:768px){
     .ProductListContainer{
+        max-width: 375px;
         .ProcdutsContent{
             width: 100%;
             .ProductList{
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 12px;
-            }
+                width: 100%;
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 12px;
+            };
         };       
     };
 };
