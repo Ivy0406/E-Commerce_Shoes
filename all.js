@@ -7,6 +7,10 @@ let CurrentPage = 1; //預設是第一頁
 const PageBtns = document.querySelector('.PageBtns'); 
 let ProductsPerPage = 9; //每頁最多顯示9個
 let AllProductData =[];
+const PageJumpingBtn = document.querySelector('.PageJumpingBtn'); 
+const PageJumpingMenu = document.querySelector('.PageJumpingMenu');
+
+
 
 // ---以下是function區---
 
@@ -91,18 +95,29 @@ function setProductsPerPage(){
     }
 }
 
+function makeJumpingMenu (){
+    const totalPages = Math.ceil(AllProductData.length/ProductsPerPage);
+    // 再寫一次確保每次執行都是拿到最新資料
+    let menuHTML = "";
+    for( let page = 1 ; page <= totalPages ; page++ ){
+        menuHTML += `<li><button value="${page}">${page}</button></li>`;
+    }
+    PageJumpingMenu.innerHTML = menuHTML;
+}
+
 
 
 
 // ---設定監聽事件---
 
-// 分頁按鈕
+// 監聽：頁數按鈕
 PageBtns.addEventListener("click",function(event){
-    
     //按鈕取值，設定執行頁數
     const clickValue = event.target.value;
     let targetPage = CurrentPage;
-    
+    if(!clickValue){
+        return;
+    };
     if(clickValue === "prev"){
         targetPage = targetPage-1;
     } 
@@ -113,7 +128,7 @@ PageBtns.addEventListener("click",function(event){
         targetPage = parseInt(clickValue); //若不是上下頁，就直接取用值。
     }
 
-    //目的：避免超出總頁數範圍
+    //避免超出總頁數範圍
     const totalPages = Math.ceil(AllProductData.length/ProductsPerPage) //先計算總頁數
 
     if(targetPage<1){
@@ -128,15 +143,24 @@ PageBtns.addEventListener("click",function(event){
         CurrentPage = targetPage;
         showPage(CurrentPage);
     }
-    
+    PageJumpingMenu.classList.remove('open');
+
     });
+
+// 快速跳轉頁面按鈕
+
+PageJumpingBtn.addEventListener("click",function(){
+    makeJumpingMenu();
+    PageJumpingMenu.classList.toggle("open");
+})
     
 
-// 視窗寬度變化
+// 監聽：視窗寬度變化
 window.addEventListener("resize",function(){
     setProductsPerPage(); 
     showPage(CurrentPage);
 })
+
 
 
 // ---執行指令區---

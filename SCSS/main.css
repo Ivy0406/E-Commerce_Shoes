@@ -168,12 +168,34 @@ button {
 }
 .ProcdutsContent .PageBtns button {
   width: 20%;
-  width: 40px;
+  max-width: 40px;
   color: #212529;
   font-weight: 500;
 }
 .ProcdutsContent .PageBtns button:hover, .ProcdutsContent .PageBtns button:active {
   background-color: #C0FA73;
+}
+.ProcdutsContent .PageBtns .PageJumping {
+  position: relative;
+  display: inline-flex;
+}
+.ProcdutsContent .PageBtns .PageJumping .PageJumpingBtn {
+  width: 100%;
+}
+.ProcdutsContent .PageBtns .PageJumping .PageJumpingMenu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  z-index: 10;
+  background-color: white;
+}
+.ProcdutsContent .PageBtns .PageJumping .PageJumpingMenu.open {
+  display: block;
+  border: 1px solid #C0FA73;
+}
+.ProcdutsContent .PageBtns .PageJumping .PageJumpingMenu button {
+  width: 100%;
 }
 
 .Header {
@@ -804,6 +826,8 @@ h1 {
 .ProductListContainer .ProductList .ProductCard a {
   text-decoration: none;
   color: #212529;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
 }
 .ProductListContainer .ProductList .ProductCard img {
   width: 100%;
@@ -841,6 +865,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #F8F9FA;
 }
 .Footer .Footer_navbar {
   width: 66%;
