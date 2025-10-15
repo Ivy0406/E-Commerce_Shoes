@@ -108,6 +108,74 @@ button {
     padding: 8px 16px;
   }
 }
+.Breadcrumb a {
+  text-decoration: none;
+  color: #6C757D;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+.Breadcrumb a::before {
+  content: "/";
+  margin: 0 12px;
+  color: #DEE2E6;
+}
+.Breadcrumb a:first-child::before {
+  content: none;
+}
+.Breadcrumb a:hover, .Breadcrumb a:active {
+  color: #212529;
+}
+
+.SideMenu {
+  width: 17%;
+  min-width: 172px;
+  display: flex;
+  flex-direction: column;
+}
+.SideMenu a {
+  display: inline-flex;
+  height: 48px;
+  align-items: center;
+  color: #212529;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+.SideMenu a:hover {
+  color: #57A203;
+}
+
+@media (max-width: 768px) {
+  .SideMenu {
+    display: none;
+  }
+}
+.ProcdutsContent {
+  display: flex;
+  flex-direction: column;
+  width: 83%;
+  max-width: 1076px;
+}
+.ProcdutsContent .PageBtns {
+  width: 336px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+}
+.ProcdutsContent .PageBtns button {
+  width: 20%;
+  width: 40px;
+  color: #212529;
+  font-weight: 500;
+}
+.ProcdutsContent .PageBtns button:hover, .ProcdutsContent .PageBtns button:active {
+  background-color: #C0FA73;
+}
+
 .Header {
   width: 66%;
   max-width: 1267.2px;
@@ -215,11 +283,10 @@ body {
   z-index: 0;
 }
 .HeroSection .HeroSection_content {
-  position: fixed;
+  position: absolute;
   height: 223px;
   z-index: 1;
-  left: 200px;
-  right: 1134px;
+  margin-left: 10%;
 }
 .HeroSection .HeroSection_content .HeroSection_title {
   max-width: 586px;
@@ -698,6 +765,63 @@ body {
     font-size: 20px;
     letter-spacing: 1px;
     margin-right: 16px;
+  }
+}
+/*以下是product-list頁面的樣式*/
+main {
+  width: 66%;
+  max-width: 1267.2px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.ProductListContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.ProductListContainer .ProductList {
+  width: 100%;
+  max-width: 1076px;
+  min-width: 351px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  grid-auto-rows: auto;
+}
+.ProductListContainer .ProductList .ProductCard a {
+  text-decoration: none;
+  color: #212529;
+}
+.ProductListContainer .ProductList .ProductCard img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #F1F3F7;
+}
+.ProductListContainer .ProductList .ProductCard figcaption {
+  text-align: left;
+}
+.ProductListContainer .ProductList .ProductCard figcaption .ProductName {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .ProductListContainer .ProcdutsContent {
+    width: 100%;
+  }
+  .ProductListContainer .ProcdutsContent .ProductList {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 }
 .Footer {

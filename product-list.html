@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>產品列表</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="SCSS/main.css"> 
 </head>
 <body>
+    <header class="Header">
+        <div class="Navbar">
+            <div class="Navbar_logo"><img src="Images/Logo.png">
+            </div>
+            <div class="Navbar_menu">
+                <a href="#" target="_blank">商品列表</a>
+                <a href="#" target="_blank">品牌故事</a>
+            </div>
+        </div>
+
+        <div class="Header_login">
+            <a href="login.html"><img src="./Images/icon-login.png" alt="註冊登入連結"></a>
+        </div>
+    </header>
+
+    <main>
+        <nav class="Breadcrumb">
+            <a href="index.html" target="_blank">首頁</a>
+            <a href="#">女鞋</a>
+            <a href="product-list.html">所有商品</a>
+        </nav>
+
+        <h1>女鞋</h1>
+
+        <section class="ProductListContainer">
+            <nav class="SideMenu">
+                <a href="">所有商品</a>
+                <a href="">慢跑鞋</a>
+                <a href="">滑板鞋</a>
+                <a href="">厚底鞋</a>
+                <a href="">限定 / 聯名企劃</a>
+            </nav>
+
+            <div class="ProcdutsContent">
+                <ul class="ProductList">  
+                    /*用JS渲染*/
+                </ul>
+                <nav class="PageBtns">
+                        <button value="prev">&lt</button>
+                        <button value="1">1</button>
+                        <button value="2">2</button>
+                        <button value="3">3</button>
+                        <button value="next">&gt</button>
+                </nav>
+            </div>
+        </section>
+
+    </main>
     
+    <div class="Banner-CTA">
+            <div class="Banner-CTA_text">加入會員取得9折優惠</div>
+            <button class="BtnNeutralLargeDefaultTextOnly"><a href="#" target="_blank">馬上註冊</a></button>
+    </div>
+ 
+    <footer class="Footer">
+        <nav class="Footer_navbar">
+            <div class="Footer_logo"><img src="./Images/Logo.png"></div>
+            <div class="Footer_menu">
+                <a href="product-list.html">商品列表</a>
+                <a href="about.html">品牌故事</a></div>  
+        </nav>
+
+        <div class="Copyright">
+            <p>Copyright ©2025 URBNSTYLE</p>
+            <p>All Rights Reserved.</p>
+        </div>
+        
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="all.js"></script>
 </body>
 </html>

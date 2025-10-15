@@ -1,0 +1,76 @@
+.Breadcrumb{
+    a{
+        text-decoration: none;
+        color: #6C757D;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.8px;
+
+        &::before{
+            content: "/";
+            margin: 0 12px;
+            color: #DEE2E6;
+        };
+
+        &:first-child::before{
+            content: none;
+        };
+        &:hover, &:active{
+            color: #212529;
+        };
+    };
+};
+
+.SideMenu{
+    width: 17%;
+    min-width: 172px;
+    display: flex;
+    flex-direction: column;
+    a{
+        display: inline-flex;
+        height: 48px;
+        align-items: center;
+        color: #212529;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        &:hover{
+            color: #57A203;
+        };
+    };
+};
+
+@media(max-width:768px){
+    .SideMenu{
+        display: none;
+    };
+}
+
+.ProcdutsContent{
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    max-width: 1076px;
+    .PageBtns {
+        width: 336px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 48px;
+    button{
+        width: 20%;
+        width: 40px;
+        color:#212529;
+        font-weight: 500;
+        &:hover ,&:active {
+            background-color: #C0FA73;
+        }
+    }
+};
+
+
+
+}
+

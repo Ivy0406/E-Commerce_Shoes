@@ -27,11 +27,10 @@ body {
         z-index: 0;
     };
     .HeroSection_content{
-        position: fixed;
+        position: absolute;
         height: 223px;
         z-index: 1;
-        left: 200px;
-        right: 1134px;
+        margin-left: 10%;
         .HeroSection_title{
             max-width: 586px;
             color: white;
@@ -541,3 +540,69 @@ body {
     };
 
 };
+
+
+/*以下是product-list頁面的樣式*/
+
+
+main{
+    width: $width-content;
+    max-width: $max-width-content;
+    margin: 0 auto;
+};
+
+h1{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.4px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+};
+
+.ProductListContainer{
+    display: flex;
+    justify-content: space-between;
+    .ProductList{
+        width: 100%;
+        max-width: 1076px;
+        min-width: 351px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 24px;
+        grid-auto-rows: auto; 
+        .ProductCard{
+            a{
+                text-decoration: none;
+                color: #212529;
+            };
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain; 
+                background-color: #F1F3F7;
+            };
+            figcaption{
+                text-align: left;
+                .ProductName{
+                    font-weight: 700;
+                };
+            };
+            
+        };
+    };
+};
+
+@media(max-width:768px){
+    .ProductListContainer{
+        .ProcdutsContent{
+            width: 100%;
+            .ProductList{
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 12px;
+            }
+        };       
+    };
+};
+

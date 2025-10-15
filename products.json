@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "series": "STREETMODE",
+        "seriesCh": "滑板系列",
+        "pic": "./Images/Product-Card-PLATFORM 404-black.png",
+        "product_name": "PLATFORM 404",
+        "price": 2600,
+        "description": "",
+        "colors": "",
+        "focus": false,
+        "Material": ""
+    },
+
+    {
+        "id": 2,
+        "series": "STREETMODE",
+        "seriesCh": "滑板系列",
+        "pic": "./Images/Product-Card-PLATFORM 404-orange.png",
+        "product_name": "PLATFORM 404",
+        "price": 2600,
+        "description": "",
+        "colors": "",
+        "focus": false,
+        "Material": ""
+    },
+
+    {
+        "id": 3,
+        "series": "STREETMODE",
+        "seriesCh": "滑板系列",
+        "pic": "./Images/Product-Card-VM001.png",
+        "product_name": "VM001",
+        "price": 2600,
+        "description": "",
+        "colors": "",
+        "focus": false,
+        "Material": ""
+    },
+
+    {
+        "id": 4,
+        "series": "STREETMODE",
+        "seriesCh": "聯名企劃",
+        "pic": "./Images/Product-Card-Melty Kiss.png",
+        "product_name": "Melty Kiss",
+        "price": 4000,
+        "description": "",
+        "colors": "",
+        "focus": false,
+        "Material": ""
+    },
+
+    {
+        "id": 5,
+        "series": "CHUNK DISTRICT",
+        "seriesCh": "厚底系列",
+        "pic": "./Images/Product-Card-BOOMBLOK.png",
+        "product_name": "BOOMBLOK",
+        "price": 3200,
+        "description": "",
+        "colors": "",
+        "focus": false,
+        "Material": ""
+    }
+]
