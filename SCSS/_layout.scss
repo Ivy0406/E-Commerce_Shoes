@@ -260,7 +260,7 @@ body {
         };
         .Banner-Ad_title{
             display: flex;
-            font-size: clamp(32px,2.5vw,48px);
+            font-size: clamp(24px,2.5vw,48px);
             font-weight: 700;
             justify-content: space-between;
             align-items: center;
@@ -272,13 +272,13 @@ body {
                 color: #C0FA73;
                 margin-left: 1.2vw;
                 margin-right: 1.2vw;
-                font-size: clamp(24px,2vw,40px);
+                font-size: clamp(20px,2vw,40px);
             };
 
         };
         .Banner-Ad_subtitle{
             color: white;
-            font-size: clamp(24px,1.6vw,32px);
+            font-size: clamp(20px,1.6vw,32px);
             font-weight: 700;
             margin-bottom: 1.6vw;
         };
@@ -286,7 +286,7 @@ body {
             color:#ADB5BD;
             font-size: clamp(16px,1vw,20px);
             font-weight: 400;
-            margin-bottom: 48px;
+            margin-bottom: 2.5vw;
         };
     };
     .indicators{
@@ -297,11 +297,15 @@ body {
         position: absolute;
         z-index: 1;
         bottom: 5%;
-        li{
+        button{
             width: 8px;
             height: 8px;
             background-color: #CED4DA;
             border-radius: 100px;
+            &:hover, &:active{
+                width: 24px;
+                background-color: #6C757D;
+            }
         };
     };
 };

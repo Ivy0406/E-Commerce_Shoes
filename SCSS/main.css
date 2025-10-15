@@ -506,7 +506,7 @@ body {
 }
 .Banner-Ad .Banner-Ad_content .Banner-Ad_title {
   display: flex;
-  font-size: clamp(32px, 2.5vw, 48px);
+  font-size: clamp(24px, 2.5vw, 48px);
   font-weight: 700;
   justify-content: space-between;
   align-items: center;
@@ -519,11 +519,11 @@ body {
   color: #C0FA73;
   margin-left: 1.2vw;
   margin-right: 1.2vw;
-  font-size: clamp(24px, 2vw, 40px);
+  font-size: clamp(20px, 2vw, 40px);
 }
 .Banner-Ad .Banner-Ad_content .Banner-Ad_subtitle {
   color: white;
-  font-size: clamp(24px, 1.6vw, 32px);
+  font-size: clamp(20px, 1.6vw, 32px);
   font-weight: 700;
   margin-bottom: 1.6vw;
 }
@@ -531,7 +531,7 @@ body {
   color: #ADB5BD;
   font-size: clamp(16px, 1vw, 20px);
   font-weight: 400;
-  margin-bottom: 48px;
+  margin-bottom: 2.5vw;
 }
 .Banner-Ad .indicators {
   width: 88px;
@@ -542,11 +542,15 @@ body {
   z-index: 1;
   bottom: 5%;
 }
-.Banner-Ad .indicators li {
+.Banner-Ad .indicators button {
   width: 8px;
   height: 8px;
   background-color: #CED4DA;
   border-radius: 100px;
+}
+.Banner-Ad .indicators button:hover, .Banner-Ad .indicators button:active {
+  width: 24px;
+  background-color: #6C757D;
 }
 
 @media (max-width: 768px) {
